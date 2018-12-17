@@ -204,7 +204,7 @@ NSString *SMMIDIObjectChangedPropertyName = @"SMMIDIObjectChangedPropertyName";
 + (MIDIUniqueID)generateNewUniqueID;
 {
     static MIDIUniqueID sequence = 0;
-    MIDIUniqueID proposed;
+    MIDIUniqueID proposed = 0;
     BOOL foundUnique = NO;
 
     while (!foundUnique) {
